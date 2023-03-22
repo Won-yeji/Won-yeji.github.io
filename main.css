@@ -1,0 +1,897 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: "GangwonEdu_OTFBoldA";
+}
+
+/* 가장 밝은 초록: 94, 202, 97
+두번째로 밝은 초록: 54, 161, 68
+기본 초록: 52, 121, 65
+바다: 123, 216, 197
+모래: 247, 245, 216
+돌: 115, 122, 137
+대화창: 250, 245, 226*/
+
+.sand {
+  position: relative;
+  width: 41rem;
+  height: 30rem;
+  background-color: rgb(247, 245, 216);
+  border-radius: 2rem;
+  margin:auto;
+  margin-top:9rem;
+}
+
+
+.green {
+  width: 35rem;
+  height: 27rem;
+  background-color: rgb(52, 121, 65);
+  border-radius: 2rem;
+
+  position: absolute;
+  top: 0rem;
+  left: 3rem;
+}
+.stone1 {
+  width: 4.5rem;
+  height: 3rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+}
+.stone2 {
+  width: 4.5rem;
+  height: 2rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+}
+.stone3 {
+  width: 40rem;
+  height: 1.5rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.stone4 {
+  width: 3rem;
+  height: 1rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -0.5rem;
+  left: 20rem;
+}
+.stone5 {
+  width: 3rem;
+  height: 2rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1.2rem;
+
+  position: absolute;
+  top: -1rem;
+  left: 22rem;
+}
+.stone6 {
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -1rem;
+  left: 36rem;
+}
+.stone7 {
+  width: 3.3rem;
+  height: 2.5rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: 0rem;
+  left: 38.7rem;
+}
+.stone8 {
+  width: 2rem;
+  height: 4rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 0.8rem;
+
+  position: absolute;
+  top: 10rem;
+  left: 40rem;
+}
+.stone9 {
+  width: 4rem;
+  height: 3rem;
+  background-color: rgb(115, 122, 137);
+  border-radius: 0.8rem;
+
+  position: absolute;
+  top: 0rem;
+  left: -1.5rem;
+}
+.water1 {
+  width: 27rem;
+  height: 2rem;
+  background-color: rgb(123, 216, 197);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 10rem;
+  left: -4.5rem;
+}
+.water2 {
+  width: 2rem;
+  height: 13rem;
+  background-color: rgb(123, 216, 197);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 10.1rem;
+  left: 20.6rem;
+}
+.water3 {
+  width: 2rem;
+  height: 18rem;
+  background-color: rgb(123, 216, 197);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 21.3rem;
+  left: 26.8rem;
+}
+.water4 {
+  width: 8rem;
+  height: 2rem;
+  background-color: rgb(123, 216, 197);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 21.2rem;
+  left: 20.8rem;
+}
+.wgreen1 {
+  width: 16rem;
+  height: 11rem;
+  background-color: rgb(54, 161, 68);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+.wgreen2 {
+  width: 20rem;
+  height: 6rem;
+  background-color: rgb(54, 161, 68);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+}
+.wgreen3 {
+  width: 13rem;
+  height: 17rem;
+  background-color: rgb(54, 161, 68);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 2rem;
+  left: 24rem;
+}
+.wwgreen1 {
+  width: 7rem;
+  height: 11rem;
+  background-color: rgb(94, 202, 97);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 3rem;
+  left: 29rem;
+}
+.wwgreen2 {
+  width: 9rem;
+  height: 4.3rem;
+  background-color: rgb(94, 202, 97);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 3rem;
+  left: 25rem;
+}
+.wwgreen3 {
+  width: 7rem;
+  height: 5rem;
+  background-color: rgb(94, 202, 97);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+}
+.water5 {
+  width: 3.7rem;
+  height: 2.7rem;
+  background-color: rgb(123, 216, 197);
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 4.5rem;
+  left: 30.8rem;
+}
+
+
+.list {
+  width: 15rem;
+  height: 30rem;
+  background-color: #74b1c6;
+  border-radius: 2rem;
+
+  text-align: center;
+  line-height: 62.5rem;
+
+  position: absolute;
+  top: 0rem;
+  left: -22rem;
+}
+.yeji {
+  width: 13rem;
+  height: 3rem;
+  background-color: rgb(255, 255, 0);
+  border-radius: 1rem;
+
+  text-align: center;
+  line-height: 3.5rem;
+
+  position: absolute;
+  top: -7rem;
+  left: 14.5rem;
+}
+
+.flag1 {
+  width: 50px;
+  height: 60px;
+  box-sizing: content-box;
+  padding-top: 5px;
+  position: relative;
+  background: rgb(255, 229, 81);
+  color: rgb(123, 216, 197);
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -6.8rem;
+  left: 13rem;
+}
+.flag1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid rgb(123, 216, 197);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.flag2 {
+  width: 50px;
+  height: 60px;
+  box-sizing: content-box;
+  padding-top: 5px;
+  position: relative;
+  background: rgb(255, 229, 81);
+  color: rgb(123, 216, 197);
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: -6.8rem;
+  left: 25.8rem;
+}
+.flag2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid rgb(123, 216, 197);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+.neighbor {
+  width: 10rem;
+  height: 3rem;
+  background-color: hsl(195, 49%, 52%);
+  border-radius: 1rem;
+
+  text-align: center;
+  line-height: 3rem;
+
+  position: absolute;
+  top: -2rem;
+  left: -19.6rem;
+}
+
+
+.imgapo {
+  position: absolute;
+  top: 4.5rem;
+  left: -17rem;
+  transition: 0.5s;
+}
+.imgmai {
+  position: absolute;
+  top: 12rem;
+  left: -20.2rem;
+  transition: 0.5s;
+}
+.imgmi {
+  position: absolute;
+  top: 12rem;
+  left: -13.7rem;
+  transition: 0.5s;
+}
+.imgppo {
+  position: absolute;
+  top: 20rem;
+  left: -20.2rem;
+  transition: 0.5s;
+}
+.imgmoon {
+  position: absolute;
+  top: 20rem;
+  left: -13.7rem;
+  transition: 0.5s;
+}
+
+.imgapo:hover {
+  transform: translateY(-6px);
+  border-radius: 5rem;
+  box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+}
+.imgapo:hover ~ .home1{
+  transform: translateY(-6px);
+  box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+}
+.imgapo:hover ~ .home11{
+  transform: translateY(-6px);
+  border-radius: 20rem;
+  box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(64,67,99,0.82);
+}
+
+.imgmai:hover {
+  transform: translateY(-6px);
+  border-radius: 5rem;
+  box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+}
+.imgmai:hover ~ .home2{
+  transform: translateY(-6px);
+  box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+}
+.imgmai:hover ~ .home22{
+  transform: translateY(-6px);
+  border-radius: 20rem;
+  box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(180,110,110,0.82);
+}
+
+.imgmi:hover {
+  transform: translateY(-6px);
+  border-radius: 5rem;
+  box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+}
+.imgmi:hover ~ .home3{
+  transform: translateY(-6px);
+  box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+}
+.imgmi:hover ~ .home33{
+  transform: translateY(-6px);
+  border-radius: 20rem;
+  box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(188,108,241,0.82);
+}
+
+.imgppo:hover {
+  transform: translateY(-10px);
+  border-radius: 5rem;
+  box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+}
+.imgppo:hover ~ .home4{
+  transform: translateY(-6px);
+  box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+}
+.imgppo:hover ~ .home44{
+  transform: translateY(-6px);
+  border-radius: 20rem;
+  box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(255,247,247,0.82);
+}
+
+.imgmoon:hover {
+  transform: translateY(-10px);
+  border-radius: 5rem;
+  box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+}
+.imgmoon:hover ~ .home5{
+  transform: translateY(-6px);
+  box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+}
+.imgmoon:hover ~ .home55{
+  transform: translateY(-6px);
+  border-radius: 20rem;
+  box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -webkit-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+  -moz-box-shadow: 19px 18px 22px 0px rgba(252,133,241,0.82);
+}
+
+.home1 {
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: rgb(81, 78, 78);
+
+  transition: 0.5s;
+  position: absolute;
+  top: 6rem;
+  left: 15.5rem;
+}
+.home11 {
+  width: 0rem;
+  height: 0rem;
+  border-bottom: 20px solid rgb(81, 78, 78);
+  border-top: -100px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  transition: 0.5s;
+  position: absolute;
+  top: 5rem;
+  left: 15rem;
+}
+
+.home2 {
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: rgb(177, 112, 112);
+
+  transition: 0.5s;
+  position: absolute;
+  top: 17rem;
+  left: 8rem;
+}
+.home22 {
+  width: 0rem;
+  height: 0rem;
+  border-bottom: 20px solid rgb(177, 112, 112);
+  border-top: -100px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  transition: 0.5s;
+  position: absolute;
+  top: 16rem;
+  left: 7.5rem;
+}
+
+.home3 {
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: rgb(222, 125, 225);
+
+  transition: 0.5s;
+  position: absolute;
+  top: 14rem;
+  left: 26rem;
+}
+.home33 {
+  width: 0rem;
+  height: 0rem;
+  border-bottom: 20px solid rgb(222, 125, 225);
+  border-top: -100px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  transition: 0.5s;
+  position: absolute;
+  top: 13rem;
+  left: 25.5rem;
+}
+
+.home4 {
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: rgb(255, 255, 255);
+
+  transition: 0.5s;
+  position: absolute;
+  top: 23rem;
+  left: 14rem;
+}
+.home44 {
+  width: 0rem;
+  height: 0rem;
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-top: -100px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  transition: 0.5s;
+  position: absolute;
+  top: 22rem;
+  left: 13.5rem;
+}
+
+.home5 {
+  width: 2.6rem;
+  height: 1.6rem;
+  background-color: rgb(255, 177, 232);
+
+  transition: 0.5s;
+  position: absolute;
+  top: 21rem;
+  left: 33rem;
+}
+.home55 {
+  width: 0rem;
+  height: 0rem;
+  border-bottom: 20px solid rgb(255, 177, 232);
+  border-top: -100px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  transition: 0.5s;
+  position: absolute;
+  top: 20rem;
+  left: 32.4rem;
+}
+
+.rightmenu {
+  border-radius: 2rem;
+
+  position: absolute;
+  top: -2.5rem;
+  left: 48.5rem;
+}
+
+/* 지금까지 기본 틀 완성, 이제부터 내용 관련 css */
+
+.imgmai:active .talk1 {
+  visibility: visible;
+}
+.talk1 {
+  width: 83rem;
+  height: 12rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 10rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 6rem;
+  left: 0rem;
+}
+.imgmai:active .talk11 {
+  visibility: visible;
+}
+.talk11 {
+  width: 79rem;
+  height: 10rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 4rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 12rem;
+  left: 1.7rem;
+}
+.imgmai:active .talk111 {
+  visibility: visible;
+}
+.talk111 {
+  width: 9rem;
+  height: 4rem;
+  background-color: rgb(177, 112, 112);
+  border-radius: 4rem;
+
+  text-align: center;
+  line-height: 4.5rem;
+
+  position: absolute;
+  top: 4.2rem;
+  left: 0rem;
+  transform: rotate(-10deg);
+}
+.imgmai:active .arrow1 {
+  visibility: visible;
+}
+.arrow1 {
+	width: 0;
+	height: 0;
+	border-top: 20px solid rgb(177, 112, 112);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+  position: absolute;
+  top: 21.5rem;
+  left: 40rem;
+}
+
+/*대화창 한 덩어리*/
+
+.imgmi:active .talk2 {
+  visibility: visible;
+}
+.talk2 {
+  width: 83rem;
+  height: 12rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 10rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 6rem;
+  left: -6.5rem;
+}
+.imgmi:active .talk22 {
+  visibility: visible;
+}
+.talk22 {
+  width: 79rem;
+  height: 10rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 4rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 12rem;
+  left: -4.7rem;
+}
+.imgmi:active .arrow2 {
+  visibility: visible;
+}
+.arrow2 {
+	width: 0;
+	height: 0;
+	border-top: 20px solid rgb(222, 125, 225);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+  position: absolute;
+  top: 21.5rem;
+  left: 34rem;
+}
+/*.imgmi:active .talk222 {
+  visibility: visible;
+}
+.talk222 {
+  width: 9rem;
+  height: 4rem;
+  background-color: rgb(222, 125, 225);
+  border-radius: 4rem;
+
+  position: absolute;
+  top: 4.2rem;
+  left: -7.5rem;
+  transform: rotate(172deg);
+}*/
+
+.imgppo:active .talk3 {
+  visibility: visible;
+}
+.imgppo:active .island {
+  visibility: visible;
+  border-radius: 4rem;
+  
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+}
+.talk3 {
+  width: 83rem;
+  height: 12rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 10rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: -2rem;
+  left: 0rem;
+}
+.imgppo:active .talk33 {
+  visibility: visible;
+}
+.talk33 {
+  width: 79rem;
+  height: 10rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 4rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 4rem;
+  left: 1.8rem;
+}
+.imgppo:active .arrow3 {
+  visibility: visible;
+}
+.arrow3 {
+	width: 0;
+	height: 0;
+	border-top: 20px solid rgb(255, 255, 255);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+  position: absolute;
+  top: 13.5rem;
+  left: 41.5rem;
+}
+/*.imgppo:active .talk333 {
+  visibility: visible;
+}
+.talk333 {
+  width: 9rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4rem;
+
+  position: absolute;
+  top: -3.8rem;
+  left: -1rem;
+  transform: rotate(172deg);
+}*/
+
+.imgmoon:active .talk4 {
+  visibility: visible;
+}
+.imgmoon:active .pic1 {
+  visibility: visible;
+  border-radius: 4rem;
+  
+  position: absolute;
+  top: 2rem;
+  left: 8rem;
+}
+.imgmoon:active .pic2 {
+  visibility: visible;
+  border-radius: 4rem;
+  
+  position: absolute;
+  top: 2rem;
+  left: 36rem;
+}
+.imgmoon:active .pic3 {
+  visibility: visible;
+  border-radius: 4rem;
+  
+  position: absolute;
+  top: 2rem;
+  left: 50rem;
+}
+.imgmoon:active .pic4 {
+  visibility: visible;
+  border-radius: 4rem;
+  
+  position: absolute;
+  top: 2rem;
+  left: 22rem;
+}
+.talk4 {
+  width: 70rem;
+  height: 12rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 10rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: -2rem;
+  left: -0.5rem;
+}
+.imgmoon:active .talk44 {
+  visibility: visible;
+}
+.talk44 {
+  width: 66rem;
+  height: 10rem;
+  background-color: rgb(250, 245, 226);
+  border-radius: 4rem;
+
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  top: 4rem;
+  left: 1.3rem;
+}
+.imgmoon:active .arrow4 {
+  visibility: visible;
+}
+.arrow4 {
+	width: 0;
+	height: 0;
+	border-top: 20px solid rgb(255, 177, 232);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+  position: absolute;
+  top: 13.5rem;
+  left: 34rem;
+}
+/*.imgmoon:active .talk444 {
+  visibility: visible;
+}
+.talk444 {
+  width: 9rem;
+  height: 4rem;
+  background-color: rgb(255, 177, 232);
+  border-radius: 4rem;
+
+  position: absolute;
+  top: -3.8rem;
+  left: -7.5rem;
+  transform: rotate(172deg);
+}*/
